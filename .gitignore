@@ -1,0 +1,15 @@
+# Original repo being analyzed
+repo/
+
+# Generated artifacts
+*.mp4
+*.log
+commits.db
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Misc
+nul

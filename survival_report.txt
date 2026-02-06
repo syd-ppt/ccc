@@ -1,0 +1,26 @@
+======================================================================
+SURVIVAL ANALYSIS
+======================================================================
+
+  Lines added (total):     472,005
+  Lines in final state:    217,081
+  Overall survival rate:   46.0%
+  Exploration cost:        254,924 lines
+
+--- Survival by File Type ---
+  Type            Added  Survived   Rate
+  ------------ -------- --------- ------
+  source        406,139   197,141  48.5%
+  docs           64,549    19,855  30.8%
+  test              858         0   0.0%
+  script            326        42  12.9%
+  other              85         8   9.4%
+  config             48        35  72.9%
+
+--- Convergence: Survival by Project Phase ---
+  Phase 1 ( 0- 25%):  ######........................  23.2%  (+118,658 lines, 27,527 survived)
+  Phase 2 (25- 50%):  #############.................  44.0%  (+87,413 lines, 38,421 survived)
+  Phase 3 (50- 75%):  #################.............  59.4%  (+119,188 lines, 70,839 survived)
+  Phase 4 (75-100%):  ################..............  54.7%  (+146,746 lines, 80,294 survived)
+
+  Zero-survival commits: 2097 of 3982 (52.7%)

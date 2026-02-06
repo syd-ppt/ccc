@@ -1,0 +1,68 @@
+======================================================================
+ABANDONED PATHS ANALYSIS
+======================================================================
+
+  Files ever created:   2,631
+  Files at HEAD:        447
+  Abandoned files:      2,185 (83.0%)
+  Lines invested in abandoned: 165,978
+
+--- Abandoned by File Type ---
+  Type          Count  Lines Invested
+  ------------ ------ ---------------
+  docs           2075          33,326
+  source           52         131,428
+  test             30             858
+  other            20              77
+  config            5               5
+  script            3             284
+
+--- Lifespan Distribution ---
+  Immediate (<100 commits)             1985 files   34,276 lines invested
+  Quick pivot (100-500)                 122 files    7,043 lines invested
+  Abandoned approach (500-2000)          58 files   56,013 lines invested
+  Architectural (>2000)                  20 files   68,646 lines invested
+
+--- Top 30 Abandoned Files by Investment ---
+    Lines  Mods Lifespan Type     Path
+  ------- ----- -------- -------- ----------------------------------------
+   12,896   198   2905c  source   src/backend/x86/codegen/codegen.rs
+   12,460    54    882c  source   src/backend/x86/assembler/encoder.rs
+   12,350   260   2905c  source   src/ir/lowering/lowering.rs
+   11,830   190   2907c  source   src/backend/arm/codegen/codegen.rs
+   10,211   180   2905c  source   src/backend/riscv/codegen/codegen.rs
+    8,702    77    932c  source   src/backend/i686/codegen/codegen.rs
+    6,676    38    888c  source   src/backend/arm/assembler/encoder.rs
+    5,534   119   2764c  source   src/frontend/parser/parser.rs
+    4,907    29    760c  source   src/backend/x86/codegen/peephole.rs
+    3,796    23    337c  source   src/backend/i686/linker/elf.rs
+    3,718    34    844c  source   src/backend/i686/assembler/encoder.rs
+    3,669    86   2905c  source   src/frontend/preprocessor/preprocessor.rs
+    3,297    50   1719c  source   src/backend/stack_layout.rs
+    3,037    30    989c  source   src/backend/x86/codegen/peephole/passes.rs
+    2,824    91   2905c  source   src/frontend/sema/sema.rs
+    2,764    29    685c  source   src/backend/elf.rs
+    2,756    17    876c  source   src/backend/riscv/assembler/encoder.rs
+    2,525    86   2905c  source   src/driver/driver.rs
+    2,481    18    571c  source   src/backend/linker_common.rs
+    2,396   117   2905c  source   src/ir/ir.rs
+    2,045    38    880c  source   src/backend/codegen_shared.rs
+    1,938    52   2905c  source   src/ir/mem2reg/mem2reg.rs
+    1,625    35   2869c  source   src/frontend/lexer/lexer.rs
+    1,262     2      5c  source   src/backend/x86/assembler/elf.rs
+      538    21   2112c  source   src/backend/call_emit.rs
+      499     2      1c  source   src/backend/arm/codegen/calls_helpers.rs
+      497     2    250c  source   verify/verify_kernel.py
+      457    21    913c  docs     ideas/fix_remaining_i686_projects.txt
+      423     2      1c  source   src/backend/x86/codegen/helpers.rs
+      319     2      1c  source   src/backend/arm/codegen/memory_helpers.rs
+
+--- Abandoned by Top-Level Directory ---
+  current_tasks                   1998 files   30,042 lines
+  src                               68 files  130,777 lines
+  ideas                             57 files    3,269 lines
+  completed_tasks                   36 files      870 lines
+  {current_tasks => completed_tasks}    16 files        1 lines
+  .                                  7 files       17 lines
+  scripts                            2 files      505 lines
+  verify                             1 files      497 lines

@@ -1,0 +1,94 @@
+======================================================================
+COORDINATION / THRASHING ANALYSIS
+======================================================================
+
+  Total file touches:     12,545
+  Thrash incidents (<30min): 2,471
+  Rapid overwrites (<10min, >50% deleted): 316
+
+--- Thrash Incidents by File Type ---
+  source        1,268 incidents
+  docs          1,161 incidents
+  test             33 incidents
+  config            6 incidents
+  other             3 incidents
+
+--- Top 30 Thrash Hotspots ---
+   126 incidents  source    src/ir/lowering/lowering.rs
+   101 incidents  source    src/ir/lowering/expr.rs
+    95 incidents  source    src/ir/lowering/stmt.rs
+    75 incidents  source    src/ir/lowering/types.rs
+    67 incidents  docs      ideas/new_projects_myasm.txt
+    61 incidents  source    src/backend/arm/codegen/codegen.rs
+    61 incidents  source    src/backend/x86/codegen/codegen.rs
+    57 incidents  docs      README.md
+    57 incidents  docs      ideas/new_projects.txt
+    46 incidents  source    src/backend/riscv/codegen/codegen.rs
+    29 incidents  source    src/backend/i686/codegen/codegen.rs
+    28 incidents  source    src/frontend/parser/parser.rs
+    28 incidents  source    src/ir/ir.rs
+    27 incidents  source    src/ir/lowering/expr_types.rs
+    21 incidents  source    src/ir/lowering/global_init.rs
+    20 incidents  source    src/backend/common.rs
+    18 incidents  source    src/frontend/sema/sema.rs
+    17 incidents  source    src/backend/generation.rs
+    17 incidents  source    src/backend/x86/assembler/encoder.rs
+    14 incidents  source    src/backend/x86/linker/mod.rs
+    14 incidents  source    src/frontend/parser/ast.rs
+    14 incidents  source    src/ir/lowering/stmt_init.rs
+    14 incidents  source    src/ir/lowering/structs.rs
+    13 incidents  source    src/frontend/preprocessor/preprocessor.rs
+    12 incidents  source    src/ir/lowering/global_init_compound.rs
+    11 incidents  source    src/backend/riscv/linker/link.rs
+    11 incidents  source    src/driver/driver.rs
+    11 incidents  source    src/passes/inline.rs
+    10 incidents  docs      src/backend/README.md
+    10 incidents  source    src/backend/riscv/assembler/elf_writer.rs
+
+--- Top 20 Rapid Overwrites ---
+  src/backend/x86/codegen/codegen.rs
+    Commit #61e7c8c added 61 lines, then #7da92bb deleted 3187 lines (5 min later)
+  src/backend/i686/codegen/codegen.rs
+    Commit #61e7c8c added 57 lines, then #7da92bb deleted 2769 lines (5 min later)
+  src/backend/riscv/codegen/codegen.rs
+    Commit #61e7c8c added 53 lines, then #7da92bb deleted 2690 lines (5 min later)
+  src/backend/arm/codegen/codegen.rs
+    Commit #61e7c8c added 58 lines, then #7da92bb deleted 2280 lines (5 min later)
+  src/driver/driver.rs
+    Commit #565bc97 added 10 lines, then #13feff3 deleted 983 lines (5 min later)
+  src/backend/common.rs
+    Commit #b0fa979 added 96 lines, then #f5f420c deleted 832 lines (5 min later)
+  src/ir/lowering/stmt.rs
+    Commit #974ab65 added 2 lines, then #b049d2d deleted 638 lines (5 min later)
+  src/backend/arm/codegen/calls_helpers.rs
+    Commit #61e7c8c added 499 lines, then #7da92bb deleted 499 lines (5 min later)
+  src/backend/x86/codegen/helpers.rs
+    Commit #61e7c8c added 423 lines, then #7da92bb deleted 423 lines (5 min later)
+  src/backend/arm/codegen/memory_helpers.rs
+    Commit #61e7c8c added 319 lines, then #7da92bb deleted 319 lines (5 min later)
+  src/backend/i686/codegen/calls_helpers.rs
+    Commit #61e7c8c added 319 lines, then #7da92bb deleted 319 lines (5 min later)
+  src/backend/i686/codegen/helpers.rs
+    Commit #61e7c8c added 317 lines, then #7da92bb deleted 317 lines (5 min later)
+  src/backend/riscv/codegen/helpers.rs
+    Commit #61e7c8c added 313 lines, then #7da92bb deleted 313 lines (5 min later)
+  src/backend/x86/codegen/integer_helpers.rs
+    Commit #61e7c8c added 283 lines, then #7da92bb deleted 283 lines (5 min later)
+  src/backend/arm/codegen/helpers.rs
+    Commit #61e7c8c added 267 lines, then #7da92bb deleted 267 lines (5 min later)
+  src/backend/i686/codegen/atomics_helpers.rs
+    Commit #61e7c8c added 251 lines, then #7da92bb deleted 251 lines (5 min later)
+  src/backend/arm/codegen/stack_frame_helpers.rs
+    Commit #61e7c8c added 245 lines, then #7da92bb deleted 245 lines (5 min later)
+  src/backend/x86/codegen/peephole/passes.rs
+    Commit #d9d0bbe added 78 lines, then #ac3d4a4 deleted 192 lines (5 min later)
+  src/backend/i686/assembler/elf_writer.rs
+    Commit #4440c1b added 7 lines, then #4400fea deleted 177 lines (5 min later)
+  src/frontend/sema/const_eval.rs
+    Commit #43c36d2 added 22 lines, then #59c09de deleted 172 lines (5 min later)
+
+--- Thrashing Over Project Phases ---
+  Phase 1 ( 0- 25%):   918 incidents
+  Phase 2 (25- 50%):   610 incidents
+  Phase 3 (50- 75%):   590 incidents
+  Phase 4 (75-100%):   353 incidents

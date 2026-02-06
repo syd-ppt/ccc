@@ -1,0 +1,108 @@
+======================================================================
+TRAJECTORY ANALYSIS: LEARNING vs THRASHING
+======================================================================
+
+  Files analyzed: 50
+  Learning    :   34 (68.0%)
+  Mixed       :   15 (30.0%)
+  Thrashing   :    1 (2.0%)
+
+--- Classification by File Type ---
+  docs         learning=1, mixed=4
+  source       learning=33, mixed=11, thrashing=1
+
+--- Per-File Results ---
+  Classification  DecR  OscR  NetP  Mods Path
+  ------------ ----- ----- ----- ----- ----------------------------------------
+  thrashing     0.46  0.53  0.96    38 src/backend/riscv/linker/link.rs
+  mixed         0.18  0.18  0.98   149 README.md
+  mixed         0.12  0.04  0.96    93 ideas/new_projects.txt
+  mixed         0.29  0.11  0.99    64 src/backend/README.md
+  mixed         0.33  0.44  0.96    35 src/backend/arm/linker/mod.rs
+  mixed         0.58  0.26  0.86    92 src/backend/generation.rs
+  mixed         0.52  0.10  0.87    38 src/backend/riscv/assembler/elf_writer.rs
+  mixed         0.23  0.30  0.94    49 src/backend/x86/linker/mod.rs
+  mixed         0.53  0.37  0.81    65 src/ir/lowering/const_eval.rs
+  mixed         0.55  0.49  0.98   197 src/ir/lowering/expr.rs
+  mixed         0.51  0.12  0.89    94 src/ir/lowering/global_init.rs
+  mixed         0.46  0.21  0.70    64 src/ir/lowering/global_init_compound.rs
+  mixed         0.06  0.06  0.96    35 src/main.rs
+  mixed         0.22  0.09  1.00    46 src/passes/README.md
+  mixed         0.54  0.41  0.76    36 src/passes/cfg_simplify.rs
+  mixed         0.57  0.33  0.99    48 src/passes/mod.rs
+  learning      0.96  0.02  0.97   106 ideas/new_projects_myasm.txt
+  learning      0.95  0.09  0.74    45 src/backend/arm/assembler/parser.rs
+  learning      0.72  0.36  0.83   114 src/backend/common.rs
+  learning      0.83  0.31  0.68    53 src/backend/inline_asm.rs
+  learning      0.74  0.36  0.96    71 src/backend/mod.rs
+  learning      0.94  0.12  0.61    35 src/backend/state.rs
+  learning      0.97  0.03  0.58    69 src/backend/traits.rs
+  learning      0.84  0.19  0.53    45 src/backend/x86/assembler/parser.rs
+  learning      0.83  0.27  0.93    77 src/common/types.rs
+  learning      0.74  0.31  0.58    87 src/frontend/parser/ast.rs
+  learning      0.72  0.21  0.60    77 src/frontend/parser/declarations.rs
+  learning      0.89  0.06  0.40    37 src/frontend/parser/declarators.rs
+  learning      0.83  0.19  0.50    49 src/frontend/parser/types.rs
+  learning      0.80  0.21  0.74    50 src/frontend/preprocessor/macro_defs.rs
+  learning      0.97  0.06  0.67    38 src/frontend/sema/builtins.rs
+  learning      0.88  0.20  0.51    51 src/frontend/sema/const_eval.rs
+  learning      0.84  0.11  0.38    38 src/frontend/sema/type_checker.rs
+  learning      0.73  0.28  0.44    60 src/ir/lowering/complex.rs
+  learning      0.73  0.21  0.80    60 src/ir/lowering/expr_builtins.rs
+  learning      0.79  0.21  0.63    64 src/ir/lowering/expr_calls.rs
+  learning      0.82  0.36  0.66   103 src/ir/lowering/expr_types.rs
+  learning      0.81  0.28  0.26    38 src/ir/lowering/func_lowering.rs
+  learning      0.88  0.08  0.44    51 src/ir/lowering/global_init_bytes.rs
+  learning      0.90  0.06  0.68    49 src/ir/lowering/lvalue.rs
+  learning      0.73  0.35  0.96   208 src/ir/lowering/stmt.rs
+  learning      0.92  0.12  0.54    53 src/ir/lowering/stmt_init.rs
+  learning      0.79  0.20  0.80    72 src/ir/lowering/structs.rs
+  learning      0.65  0.39  0.95   155 src/ir/lowering/types.rs
+  learning      0.89  0.12  1.00    36 src/passes/constant_fold.rs
+  learning      0.62  0.37  1.00    51 src/passes/dce.rs
+  learning      0.79  0.04  0.88    54 src/passes/gvn.rs
+  learning      0.80  0.36  0.44    52 src/passes/inline.rs
+  learning      0.85  0.23  0.62    41 src/passes/licm.rs
+  learning      0.77  0.29  0.90    36 src/passes/simplify.rs
+
+--- Thrashing Files: Distance Trajectories ---
+
+  src/backend/riscv/linker/link.rs
+    [  0] 0.962 ######################################
+    [  1] 0.962 ######################################
+    [  2] 0.964 ######################################
+    [  3] 0.964 ######################################
+    [  4] 0.965 ######################################
+    [  5] 0.947 #####################################
+    [  6] 0.949 #####################################
+    [  7] 0.949 #####################################
+    [  8] 0.949 #####################################
+    [  9] 0.948 #####################################
+    [ 10] 0.949 #####################################
+    [ 11] 0.950 #####################################
+    [ 12] 0.949 #####################################
+    [ 13] 0.949 #####################################
+    [ 14] 0.949 #####################################
+    [ 15] 0.949 #####################################
+    [ 16] 0.946 #####################################
+    [ 17] 0.948 #####################################
+    [ 18] 0.949 #####################################
+    [ 19] 0.937 #####################################
+    [ 20] 0.937 #####################################
+    [ 21] 0.934 #####################################
+    [ 22] 0.934 #####################################
+    [ 23] 0.934 #####################################
+    [ 24] 0.934 #####################################
+    [ 25] 0.934 #####################################
+    [ 26] 0.922 ####################################
+    [ 27] 0.922 ####################################
+    [ 28] 0.933 #####################################
+    [ 29] 0.921 ####################################
+    [ 30] 0.921 ####################################
+    [ 31] 0.913 ####################################
+    [ 32] 0.918 ####################################
+    [ 33] 0.919 ####################################
+    [ 34] 0.838 #################################
+    [ 35] 0.004 
+    [ 36] 0.002 
+    [ 37] 0.000 
