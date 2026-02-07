@@ -1,4 +1,4 @@
-"""Generate a Gource custom log from commits.db with subsystem-based coloring."""
+"""Generate a Gource custom log from commits.db with action-based coloring."""
 
 import duckdb
 from datetime import datetime, timezone
@@ -6,31 +6,10 @@ from datetime import datetime, timezone
 DB_PATH = "D:/projects/ccc/commits.db"
 OUTPUT_PATH = "D:/projects/ccc/gource_custom.log"
 
-# Subsystem color mapping: (path_prefix, hex_color)
-SUBSYSTEM_COLORS = [
-    ("src/frontend/lexer/", "FF6600"),
-    ("src/frontend/parser/", "00AAFF"),
-    ("src/frontend/preprocessor/", "FFAA00"),
-    ("src/frontend/sema/", "FFFF00"),
-    ("src/ir/", "00FFAA"),
-    ("src/passes/", "AA00FF"),
-    ("src/backend/x86/", "00FF00"),
-    ("src/backend/arm/", "00CC44"),
-    ("src/backend/riscv/", "44FF00"),
-    ("src/backend/i686/", "00FF88"),
-    ("src/backend/", "88FF88"),
-    ("src/driver/", "FFFFFF"),
-    ("current_tasks/", "666666"),
-    ("ideas/", "666666"),
-]
-DEFAULT_COLOR = "AAAAAA"
-
-
-def get_color(file_path: str) -> str:
-    for prefix, color in SUBSYSTEM_COLORS:
-        if file_path.startswith(prefix):
-            return color
-    return DEFAULT_COLOR
+# Action-based colors: green=create, red=delete, neutral=modify
+COLOR_ADD = "00FF00"
+COLOR_DELETE = "FF3333"
+COLOR_MODIFY = "CCCCFF"
 
 
 def iso_to_unix(iso_str: str) -> int:
@@ -54,16 +33,18 @@ def main() -> None:
 
     for date_str, author, file_path, insertions, deletions in rows:
         timestamp = iso_to_unix(date_str)
-        color = get_color(file_path)
 
         if deletions > 0 and insertions == 0:
             action = "D"
+            color = COLOR_DELETE
             seen_files.discard(file_path)
         elif file_path not in seen_files:
             action = "A"
+            color = COLOR_ADD
             seen_files.add(file_path)
         else:
             action = "M"
+            color = COLOR_MODIFY
 
         lines.append(f"{timestamp}|{author}|{action}|/{file_path}|{color}")
 

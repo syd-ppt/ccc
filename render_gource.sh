@@ -29,14 +29,15 @@ echo "Output: $OUTPUT"
   --background-colour 000000 \
   --title "claudes-c-compiler — 14 Days, 3982 Commits" \
   --camera-mode overview \
-  --elasticity 0.1 \
+  --elasticity 0.01 \
   --dir-name-depth 3 \
-  --bloom-multiplier 0.5 \
-  --output-framerate 60 \
+  --bloom-multiplier 0.01 \
+  --disable-auto-rotate \
+  --output-framerate 30 \
   -o - \
-| "$FFMPEG" -y -r 60 -f image2pipe -vcodec ppm -i - \
-  -c:v libx264 -profile:v high -preset slow \
-  -crf 18 -pix_fmt yuv420p -g 30 -bf 2 \
+| "$FFMPEG" -y -r 30 -f image2pipe -vcodec ppm -i - \
+  -c:v libx264 -profile:v high -preset veryslow \
+  -crf 23 -pix_fmt yuv420p -g 30 -bf 2 \
   -movflags faststart \
   "$OUTPUT"
 
