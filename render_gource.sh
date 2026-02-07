@@ -10,7 +10,7 @@ FFMPEG="C:/ffmpeg/bin/ffmpeg.exe"
 LOG="D:/projects/ccc/gource_custom.log"
 CAPTIONS="D:/projects/ccc/gource_captions.txt"
 ASS_OVERLAY="D:/projects/ccc/counter_overlay.ass"
-OUTPUT="D:/projects/ccc/ccc_evolution.mp4"
+OUTPUT="D:/projects/ccc/ccc_creative_iteration.mp4"
 
 # Verify inputs exist
 for f in "$LOG" "$CAPTIONS" "$ASS_OVERLAY"; do
@@ -54,7 +54,7 @@ echo "Output: $OUTPUT"
   --output-framerate 30 \
   -o - \
 | "$FFMPEG" -y -r 30 -f image2pipe -vcodec ppm -i - \
-  -vf "ass=${ASS_OVERLAY}" \
+  -vf "ass='${ASS_OVERLAY//:/\\:}'" \
   -c:v libx264 -profile:v high -preset veryslow \
   -crf 23 -pix_fmt yuv420p -g 30 -bf 2 \
   -movflags faststart \
