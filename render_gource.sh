@@ -1,5 +1,6 @@
 #!/bin/bash
 # Render Gource visualization of CCC compiler evolution to MP4.
+# Two-step: Gource → PPM pipe → ffmpeg with ASS subtitle overlay.
 # Requires: Gource (C:\Users\Syd\AppData\Local\Gource\gource.exe), ffmpeg (C:\ffmpeg\bin\ffmpeg)
 
 set -euo pipefail
@@ -7,10 +8,23 @@ set -euo pipefail
 GOURCE="C:/Users/Syd/AppData/Local/Gource/gource.exe"
 FFMPEG="C:/ffmpeg/bin/ffmpeg.exe"
 LOG="D:/projects/ccc/gource_custom.log"
+CAPTIONS="D:/projects/ccc/gource_captions.txt"
+ASS_OVERLAY="D:/projects/ccc/counter_overlay.ass"
 OUTPUT="D:/projects/ccc/ccc_evolution.mp4"
+
+# Verify inputs exist
+for f in "$LOG" "$CAPTIONS" "$ASS_OVERLAY"; do
+    if [ ! -f "$f" ]; then
+        echo "Missing: $f"
+        echo "Run: python generate_gource_log.py"
+        exit 1
+    fi
+done
 
 echo "Rendering Gource visualization..."
 echo "Log: $LOG"
+echo "Captions: $CAPTIONS"
+echo "ASS overlay: $ASS_OVERLAY"
 echo "Output: $OUTPUT"
 
 "$GOURCE" \
@@ -33,9 +47,14 @@ echo "Output: $OUTPUT"
   --dir-name-depth 3 \
   --bloom-multiplier 0.01 \
   --disable-auto-rotate \
+  --caption-file "$CAPTIONS" \
+  --caption-size 22 \
+  --caption-duration 5 \
+  --caption-colour FFCC00 \
   --output-framerate 30 \
   -o - \
 | "$FFMPEG" -y -r 30 -f image2pipe -vcodec ppm -i - \
+  -vf "ass=${ASS_OVERLAY}" \
   -c:v libx264 -profile:v high -preset veryslow \
   -crf 23 -pix_fmt yuv420p -g 30 -bf 2 \
   -movflags faststart \

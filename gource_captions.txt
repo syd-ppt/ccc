@@ -1,0 +1,12 @@
+1769130262|Day 1: Empty repo — three backends at once
+1769174499|Trying shared ArchCodegen trait...
+1769247187|Decomposing lowerer: 10-commit refactor
+1769319284|Optimization sprint: peephole, LICM, copy prop
+1769405640|Building native x86 assembler
+1769489251|Splitting monoliths into focused modules
+1769584807|New target: i686 32-bit backend
+1769647345|New run — reward hacks discovered and removed
+1769758604|Peephole optimizers across all backends
+1770158619|Pivoting: native assembler + ELF linker
+1770190125|Deduplicating ELF infrastructure across 4 backends
+1770281207|Linker modularization: 9500 lines → 30 files

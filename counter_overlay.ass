@@ -1,0 +1,95 @@
+﻿[Script Info]
+Title: CCC Eureka Counter
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Counter,Consolas,28,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,2,1,9,10,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:50.41,0:00:55.41,Counter,,0,0,0,,Hard problems solved: 0 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:00:55.41,0:01:06.63,Counter,,0,0,0,,Hard problems solved: 1 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:06.63,0:01:07.24,Counter,,0,0,0,,Hard problems solved: 2 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:07.24,0:01:19.88,Counter,,0,0,0,,Hard problems solved: 3 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:19.88,0:01:20.38,Counter,,0,0,0,,Hard problems solved: 4 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:20.38,0:01:28.09,Counter,,0,0,0,,Hard problems solved: 5 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:28.09,0:01:38.41,Counter,,0,0,0,,Hard problems solved: 6 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:38.41,0:01:42.13,Counter,,0,0,0,,Hard problems solved: 7 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:42.13,0:01:42.13,Counter,,0,0,0,,Hard problems solved: 8 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:42.13,0:01:46.91,Counter,,0,0,0,,Hard problems solved: 9 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:46.91,0:01:48.16,Counter,,0,0,0,,Hard problems solved: 10 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:48.16,0:01:49.31,Counter,,0,0,0,,Hard problems solved: 11 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:49.31,0:01:51.15,Counter,,0,0,0,,Hard problems solved: 12 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:51.15,0:01:51.15,Counter,,0,0,0,,Hard problems solved: 13 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:51.15,0:01:51.15,Counter,,0,0,0,,Hard problems solved: 14 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:51.15,0:01:51.15,Counter,,0,0,0,,Hard problems solved: 15 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:51.15,0:01:51.15,Counter,,0,0,0,,Hard problems solved: 16 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:51.15,0:01:51.49,Counter,,0,0,0,,Hard problems solved: 17 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:51.49,0:01:52.29,Counter,,0,0,0,,Hard problems solved: 18 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:52.29,0:01:53.00,Counter,,0,0,0,,Hard problems solved: 19 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:53.00,0:01:53.23,Counter,,0,0,0,,Hard problems solved: 20 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:53.23,0:01:53.51,Counter,,0,0,0,,Hard problems solved: 21 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:53.51,0:01:53.57,Counter,,0,0,0,,Hard problems solved: 22 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:53.57,0:01:54.11,Counter,,0,0,0,,Hard problems solved: 23 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:54.11,0:01:54.31,Counter,,0,0,0,,Hard problems solved: 24 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:54.31,0:01:55.42,Counter,,0,0,0,,Hard problems solved: 25 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:01:55.42,0:02:00.11,Counter,,0,0,0,,Hard problems solved: 26 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:00.11,0:02:02.46,Counter,,0,0,0,,Hard problems solved: 27 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:02.46,0:02:03.81,Counter,,0,0,0,,Hard problems solved: 28 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:03.81,0:02:05.04,Counter,,0,0,0,,Hard problems solved: 29 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:05.04,0:02:05.14,Counter,,0,0,0,,Hard problems solved: 30 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:05.14,0:02:05.39,Counter,,0,0,0,,Hard problems solved: 31 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:05.39,0:02:05.39,Counter,,0,0,0,,Hard problems solved: 32 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:05.39,0:02:05.94,Counter,,0,0,0,,Hard problems solved: 33 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:05.94,0:02:06.04,Counter,,0,0,0,,Hard problems solved: 34 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:06.04,0:02:06.60,Counter,,0,0,0,,Hard problems solved: 35 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:06.60,0:02:08.31,Counter,,0,0,0,,Hard problems solved: 36 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:08.31,0:02:13.09,Counter,,0,0,0,,Hard problems solved: 37 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:13.09,0:02:13.23,Counter,,0,0,0,,Hard problems solved: 38 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:13.23,0:02:14.14,Counter,,0,0,0,,Hard problems solved: 39 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:14.14,0:02:16.68,Counter,,0,0,0,,Hard problems solved: 40 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:16.68,0:02:17.87,Counter,,0,0,0,,Hard problems solved: 41 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:17.87,0:02:17.87,Counter,,0,0,0,,Hard problems solved: 42 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:17.87,0:02:18.80,Counter,,0,0,0,,Hard problems solved: 43 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:18.80,0:02:18.80,Counter,,0,0,0,,Hard problems solved: 44 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:18.80,0:02:29.13,Counter,,0,0,0,,Hard problems solved: 45 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:29.13,0:02:51.24,Counter,,0,0,0,,Hard problems solved: 46 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:51.24,0:02:51.24,Counter,,0,0,0,,Hard problems solved: 47 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:51.24,0:02:51.24,Counter,,0,0,0,,Hard problems solved: 48 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:02:51.24,0:03:20.34,Counter,,0,0,0,,Hard problems solved: 49 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:20.34,0:03:30.95,Counter,,0,0,0,,Hard problems solved: 50 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:30.95,0:03:32.40,Counter,,0,0,0,,Hard problems solved: 51 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:32.40,0:03:33.44,Counter,,0,0,0,,Hard problems solved: 52 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:33.44,0:03:33.87,Counter,,0,0,0,,Hard problems solved: 53 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:33.87,0:03:34.45,Counter,,0,0,0,,Hard problems solved: 54 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:34.45,0:03:37.00,Counter,,0,0,0,,Hard problems solved: 55 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:37.00,0:03:37.64,Counter,,0,0,0,,Hard problems solved: 56 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:37.64,0:03:37.80,Counter,,0,0,0,,Hard problems solved: 57 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:37.80,0:03:39.16,Counter,,0,0,0,,Hard problems solved: 58 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:39.16,0:03:39.19,Counter,,0,0,0,,Hard problems solved: 59 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:39.19,0:03:39.60,Counter,,0,0,0,,Hard problems solved: 60 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:39.60,0:03:40.43,Counter,,0,0,0,,Hard problems solved: 61 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:40.43,0:03:41.10,Counter,,0,0,0,,Hard problems solved: 62 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:41.10,0:03:42.38,Counter,,0,0,0,,Hard problems solved: 63 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:42.38,0:03:42.41,Counter,,0,0,0,,Hard problems solved: 64 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:42.41,0:03:42.68,Counter,,0,0,0,,Hard problems solved: 65 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:42.68,0:03:43.90,Counter,,0,0,0,,Hard problems solved: 66 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:43.90,0:03:45.65,Counter,,0,0,0,,Hard problems solved: 67 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:45.65,0:03:45.81,Counter,,0,0,0,,Hard problems solved: 68 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:45.81,0:03:46.45,Counter,,0,0,0,,Hard problems solved: 69 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:46.45,0:03:46.55,Counter,,0,0,0,,Hard problems solved: 70 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:46.55,0:03:47.00,Counter,,0,0,0,,Hard problems solved: 71 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:47.00,0:03:47.54,Counter,,0,0,0,,Hard problems solved: 72 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:47.54,0:03:47.67,Counter,,0,0,0,,Hard problems solved: 73 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:47.67,0:03:47.67,Counter,,0,0,0,,Hard problems solved: 74 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:47.67,0:03:48.98,Counter,,0,0,0,,Hard problems solved: 75 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:48.98,0:03:49.16,Counter,,0,0,0,,Hard problems solved: 76 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:49.16,0:03:49.94,Counter,,0,0,0,,Hard problems solved: 77 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:49.94,0:03:50.17,Counter,,0,0,0,,Hard problems solved: 78 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:50.17,0:03:51.01,Counter,,0,0,0,,Hard problems solved: 79 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:51.01,0:03:51.01,Counter,,0,0,0,,Hard problems solved: 80 / 81\NZero-shot: 91.4%
+Dialogue: 0,0:03:51.01,0:08:51.01,Counter,,0,0,0,,Hard problems solved: 81 / 81\NZero-shot: 91.4%
